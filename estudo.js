@@ -19,13 +19,16 @@ function total(){
     document.getElementById("juros").focus();
  return
 }
-  for(let i = 1;
-    i <= t; i++){
+  for(let i = 1; i<=t; i++) {
       r = c * (1 + (j/100));
-      document.write("Mês " + i + " valor: " + moeda(r) +"<br>");
-      c = r;
+      mes +="mes" + i + "valor;" + moeda(r) + "<br>"
+      // document.write("Mês " + i + " valor: " + moeda(r) +"<br>");
+      c = r; 
   }
-  document.write("Resultado: " + moeda(r))+"<br>";
+  document.getElementById("mes").innerHTML=mes;
+
+  document.getElementById("total").innerHTML="total; "+moeda(r);
+  //document.write("Resultado: " + moeda(r))+"<br>";
 }
 
 
@@ -65,7 +68,5 @@ function subtracao(){
         document.getElementById("resultado").innerHTML =r;
         }
   
-
-
 
 
